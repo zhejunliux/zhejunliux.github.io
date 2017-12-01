@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://turingxi.top">
-  <title>Archives: 2017/11 | NJ&#39;s blog</title>
+  <title>1015.Reversible Primes | NJ&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
-<meta property="og:type" content="website">
-<meta property="og:title" content="NJ&#39;s blog">
-<meta property="og:url" content="http://turingxi.top/archives/2017/11/index.html">
+  <meta name="description" content="英文 Reversible Primes (20)A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal sy">
+<meta name="keywords" content="pat c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1015.Reversible Primes">
+<meta property="og:url" content="http://turingxi.top/2017/12/01/1015-Reversible-Primes/index.html">
 <meta property="og:site_name" content="NJ&#39;s blog">
-<meta property="og:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
+<meta property="og:description" content="英文 Reversible Primes (20)A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because it">
+<meta property="og:updated_time" content="2017-12-01T11:15:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NJ&#39;s blog">
-<meta name="twitter:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
+<meta name="twitter:title" content="1015.Reversible Primes">
+<meta name="twitter:description" content="英文 Reversible Primes (20)A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because it">
   
   
     <link rel="icon" href="/img/tu.png">
@@ -124,60 +126,117 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-1015-Reversible-Primes" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/25/helloworld/" class="archive-article-date">
-  	<time datetime="2017-11-25T02:47:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-25</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/25/helloworld/">HelloWorld</a>
+    <h1 class="article-title" itemprop="name">
+      1015.Reversible Primes
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/01/1015-Reversible-Primes/" class="archive-article-date">
+  	<time datetime="2017-12-01T11:11:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="英文"><a href="#英文" class="headerlink" title="英文"></a>英文</h3><ol>
+<li>Reversible Primes (20)<br>A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because its reverse 37 is also a prime.<br>Now given any two positive integers N (&lt; 10^5) and D (1 &lt; D &lt;= 10), you are supposed to tell if N is a reversible prime with radix D.<br>Input Specification:<br>The input file consists of several test cases. Each case occupies a line which contains two integers N and D. The input is finished by a negative N.<br>Output Specification:<br>For each test case, print in one line “Yes” if N is a reversible prime with radix D, or “No” if not.<br>Sample Input:<br>73 10<br>23 2<br>23 10<br>-2<br>Sample Output:<br>Yes<br>Yes<br>No<h3 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h3>反转素数<br>在任何数字系统中一个可以反转的素数是指这个数字在那个系统中通过“反转”也是一个素数。举个例子，一个十进制系统中的一个数字73是一个可以反转的素数，因为他的反转数字37也是一个素数。<br>现在有任意两个正整数N（&lt; 105）和D（1 &lt; D &lt;= 10），你要求得这个这个正数N是否是D进制的反转数。<br>输入规格：<br>一个输入文件包含一些测试用例。每个测试用例在一行内包含两个整数N和D，当输入的N为负数时，一位这个测试文件结束了。<br>输出规格：<br>对于每个测试用例，如果N是一个在D进制中可以反转的素数就输出“Yes”否则就输出“No”<h3 id="分析与解题"><a href="#分析与解题" class="headerlink" title="分析与解题"></a>分析与解题</h3></li>
+<li>输入的数字是一些十进制整数，也就是说不一定是素数，故先判断是否为素数</li>
+<li>如果是素数，之后翻转这个数字，之后计算翻转后的数字是不是也是素数</li>
+<li>翻转。题目给出的N是十进制数字，翻转意指D进制数字N的翻转，故首先要把十进制数字转换为D进制数字。通过十进制变化为D进制数字的规则，除D取余法。得到的结果是一个翻转后的D进制数。 再通过D进制转换为十进制数的方法，乘D的次方之后再相加。D进制转换为10进制，从高位开始或者从低位开始都可以，但要需要记住D进制数字的位数。</li>
+<li>最后判断翻转后的十进制数字是否为素数。<br>ps：输出格式，之前都是将所有的输出存放在数组中，通过判断数值的标志值来输出，这次看了ZJU上的代码，发现可以判断一个输出一个。在人工调试的时候，这样的输出是伴随着输入一个就输出一个进行执行的，期初以为这样是违规的，这次试验后，发现也是可以通过的，所以之后可以用这样的方法来进行输出。关于分析与代码的构造，看了ZJU的代码，发现条理清晰明了。期间有一个点没有通过，后来调试后，发现是结构问题，并不是解决主要问题的方法，比如判断是否为素数以及十进制转D进制出了问题，是在输入格式上出现了错误，自己看了ZJU的代码后，有意识的朝着它的代码去更改，后来虽然与ZJU的代码不同，但是我发觉那个没过去的点已经通过了，所以我想问题是出在了输入结构那边<h3 id="C语言实现"><a href="#C语言实现" class="headerlink" title="C语言实现"></a>C语言实现</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> y[<span class="number">64</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> end[<span class="number">100000</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> len = <span class="number">0</span>; <span class="comment">//d进制数字的长度</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isprime</span><span class="params">(<span class="keyword">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(p == <span class="number">0</span> || p == <span class="number">1</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt; p)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>((p % i) == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">input</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n, d;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">		<span class="keyword">if</span>(n &lt; <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;d);</span><br><span class="line">		<span class="comment">//如果不是素数就不用进行反转</span></span><br><span class="line">		<span class="keyword">if</span>(isprime(n) == <span class="number">1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">//反转</span></span><br><span class="line">			<span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">while</span>(n != <span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				y[j] = n % d;</span><br><span class="line">				n /= d;</span><br><span class="line">				j++;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">//将反转数字转换为十进制数字</span></span><br><span class="line">			<span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">			j--;</span><br><span class="line">			<span class="keyword">while</span>(j &gt;= <span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				sum += y[k] * (<span class="keyword">int</span>)(<span class="built_in">pow</span>(d, j));</span><br><span class="line">				j--;</span><br><span class="line">				k++;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			<span class="comment">//判断是否为素数</span></span><br><span class="line">			<span class="keyword">if</span>(isprime(sum) != <span class="number">1</span>)</span><br><span class="line">				end[i] = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			end[i] = <span class="number">1</span>;</span><br><span class="line">		i++;</span><br><span class="line">		len = i;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	input();</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt; len)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(end[i] == <span class="number">0</span>)</span><br><span class="line">			<span class="built_in">puts</span>(<span class="string">"Yes"</span>);</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">puts</span>(<span class="string">"No"</span>);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">pat c</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/11/25/helloworld/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HelloWorld</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://turingxi.top/2017/12/01/1015-Reversible-Primes/",
+  owner: 'NJ2046',
+  repo: 'NJ2046.github.io',
+  oauth: {
+    client_id: '262c85e9adc4507cbb7a',
+    client_secret: 'a4ef2026a57033d7f43fcbe701e1887ee37200f5',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -200,8 +259,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
