@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://turingxi.top">
-  <title>Archives: 2017/11 | NJ&#39;s blog</title>
+  <title>1016. Phone Bills | NJ&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
-<meta property="og:type" content="website">
-<meta property="og:title" content="NJ&#39;s blog">
-<meta property="og:url" content="http://turingxi.top/archives/2017/11/index.html">
+  <meta name="description" content="英文描述1016. Phone Bills (25)A long-distance telephone company charges its customers by the following rules:Making a long-distance call costs a certain amount per ">
+<meta name="keywords" content="PAT,C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1016. Phone Bills">
+<meta property="og:url" content="http://turingxi.top/2017/12/01/1016-Phone-Bills/index.html">
 <meta property="og:site_name" content="NJ&#39;s blog">
-<meta property="og:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
+<meta property="og:description" content="英文描述1016. Phone Bills (25)A long-distance telephone company charges its customers by the following rules:Making a long-distance call costs a certain amount per minute, depending on the time of day whe">
+<meta property="og:updated_time" content="2017-12-01T13:59:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NJ&#39;s blog">
-<meta name="twitter:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
+<meta name="twitter:title" content="1016. Phone Bills">
+<meta name="twitter:description" content="英文描述1016. Phone Bills (25)A long-distance telephone company charges its customers by the following rules:Making a long-distance call costs a certain amount per minute, depending on the time of day whe">
   
   
     <link rel="icon" href="/img/tu.png">
@@ -128,60 +130,116 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-1016-Phone-Bills" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/25/helloworld/" class="archive-article-date">
-  	<time datetime="2017-11-25T02:47:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-25</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/25/helloworld/">HelloWorld</a>
+    <h1 class="article-title" itemprop="name">
+      1016. Phone Bills
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/01/1016-Phone-Bills/" class="archive-article-date">
+  	<time datetime="2017-12-01T12:24:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><font size="3">1016. Phone Bills (25)<br>A long-distance telephone company charges its customers by the following rules:<br>Making a long-distance call costs a certain amount per minute, depending on the time of day when the call is made. When a customer starts connecting a long-distance call, the time will be recorded, and so will be the time when the customer hangs up the phone. Every calendar month, a bill is sent to the customer for each minute called (at a rate determined by the time of day). Your job is to prepare the bills for each month, given a set of phone call records.<a id="more"></a><br>Input Specification:<br>Each input file contains one test case. Each case has two parts: the rate structure, and the phone call records.<br>The rate structure consists of a line with 24 non-negative integers denoting the toll (cents/minute) from 00:00 - 01:00, the toll from 01:00 - 02:00, and so on for each hour in the day.<br>The next line contains a positive number N (&lt;= 1000), followed by N lines of records. Each phone call record consists of the name of the customer (string of up to 20 characters without space), the time and date (mm:dd:hh:mm), and the word “on-line” or “off-line”.<br>For each test case, all dates will be within a single month. Each “on-line” record is paired with the chronologically next record for the same customer provided it is an “off-line” record. Any “on-line” records that are not paired with an “off-line” record are ignored, as are “off-line” records not paired with an “on-line” record. It is guaranteed that at least one call is well paired in the input. You may assume that no two records for the same customer have the same time. Times are recorded using a 24-hour clock.<br>Output Specification:<br>For each test case, you must print a phone bill for each customer.<br>Bills must be printed in alphabetical order of customers’ names. For each customer, first print in a line the name of the customer and the month of the bill in the format shown by the sample. Then for each time period of a call, print in one line the beginning and ending time and date (dd:hh:mm), the lasting time (in minute) and the charge of the call. The calls must be listed in chronological order. Finally, print the total charge for the month in the format shown by the sample.<br>Sample Input:<br>10 10 10 10 10 10 20 20 20 15 15 15 15 15 15 15 20 30 20 15 15 10 10 10<br>10<br>CYLL 01:01:06:01 on-line<br>CYLL 01:28:16:05 off-line<br>CYJJ 01:01:07:00 off-line<br>CYLL 01:01:08:03 off-line<br>CYJJ 01:01:05:59 on-line<br>aaa 01:01:01:03 on-line<br>aaa 01:02:00:01 on-line<br>CYLL 01:28:15:41 on-line<br>aaa 01:05:02:24 on-line<br>aaa 01:04:23:59 off-line<br>Sample Output:<br>CYJJ 01<br>01:05:59 01:07:00 61 $12.10<br>Total amount: $12.10<br>CYLL 01<br>01:06:01 01:08:03 122 $24.40<br>28:15:41 28:16:05 24 $3.85<br>Total amount: $28.25<br>aaa 01<br>02:00:01 04:23:59 4318 $638.80<br>Total amount: $638.80<br></font></p>
+<h3 id="中文描述"><a href="#中文描述" class="headerlink" title="中文描述"></a>中文描述</h3><p>电话账单<br>一个长途电话公司的收费规则如下：<br>一个长途电话的消费是根据每分钟的价钱来定计算的，这价钱依赖于一天中的不同时段。当一个顾客开始打电话的时候，这个时间会被电话公司记录，当顾客挂断电话时，这个时间也会被记录。每个月，带有每段通话记录的账单将会发送给客户，其中每段通话是根据一天中不同时间段来计算的。你的工作是准备每月的账单和手机通话记录的一个集合。<br>输入规则：<br>每个输入文件包含一个测试用例。每个用例有两个部分：比率结构体和手机通话记录。<br>比率结构体是指在一行内有24个非负数的整数，这24个整数代表着长途电话费。第一个数字代表从00:00到01:00的电话费，第二个数字代表从01:00到02:00的电话费，依次类推。第24个数字就代表着23:00到00:00的电话费。这个包含关系好像没有说清楚，比如一个人从00:30开始打电话，打到了01:22。那么我想问其中的01:00算第一个数字的费用还是算第二个数字的费用？<br>下一行包含一个正数N(&lt;= 1000),接着是N条记录。每条记录包含一个顾客的名字（由20个字符组成不包含空格），一个时间和日期（mm：dd：hh：mm），一个单词：在线或者下线。每个测试用例，所有的数据都在一个月中。每个在线记录和下线记录是按照时间先后顺序成对出现的。任何一个没有对应下线记录的在线记录都将被忽略，任何一个没有对应在线记录的下线记录也会被忽略。输入保证至少有一对在线记录和下线记录是对应的。你可以假设在同一时间没有任何两条记录是相同的。时间采用24小时制。<br>输出规则：<br>对于每个测试用例，你必须每个顾客的手机账单。<br>打印账单必须按照顾客名字的字母顺序进行打印（大写在小写）。对于每个顾客，在第一行内输出顾客名字和月份，格式如输出样例。之后打印每个时间段的电话，在一行内打印开始和结束时间和日期（dd：hh：mm），最后打印时间（分钟）和收费。没通电话必须按照时间先后顺序排序（这里默认为通话时长的递减顺序）。最后一行打印每月的总收费，格式如样例输出。<br>样例输入：<br>10 10 10 10 10 10 20 20 20 15 15 15 15 15 15 15 20 30 20 15 15 10 10 10<br>10<br>CYLL 01:01:06:01 on-line<br>CYLL 01:28:16:05 off-line<br>CYJJ 01:01:07:00 off-line<br>CYLL 01:01:08:03 off-line<br>CYJJ 01:01:05:59 on-line<br>aaa 01:01:01:03 on-line<br>aaa 01:02:00:01 on-line<br>CYLL 01:28:15:41 on-line<br>aaa 01:05:02:24 on-line<br>aaa 01:04:23:59 off-line<br>样例输出：<br>CYJJ 01<br>01:05:59 01:07:00 61 $12.10<br>Total amount: $12.10<br>CYLL 01<br>01:06:01 01:08:03 122 $24.40<br>28:15:41 28:16:05 24 $3.85<br>Total amount: $28.25<br>aaa 01<br>02:00:01 04:23:59 4318 $638.80<br>Total amount: $638.80</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PAT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/12/01/1015-Reversible-Primes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1015.Reversible Primes</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://turingxi.top/2017/12/01/1016-Phone-Bills/",
+  owner: 'NJ2046',
+  repo: 'NJ2046.github.io',
+  oauth: {
+    client_id: '262c85e9adc4507cbb7a',
+    client_secret: 'a4ef2026a57033d7f43fcbe701e1887ee37200f5',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -204,8 +262,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
