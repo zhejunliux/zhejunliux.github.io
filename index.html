@@ -63,6 +63,10 @@
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -150,7 +154,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><font size="3">1016. Phone Bills (25)<br>A long-distance telephone company charges its customers by the following rules:<br>Making a long-distance call costs a certain amount per minute, depending on the time of day when the call is made. When a customer starts connecting a long-distance call, the time will be recorded, and so will be the time when the customer hangs up the phone. Every calendar month, a bill is sent to the customer for each minute called (at a rate determined by the time of day). Your job is to prepare the bills for each month, given a set of phone call records.
+        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><font size="3"><center><strong>1016. Phone Bills (25)</strong></center>A long-distance telephone company charges its customers by the following rules:Making a long-distance call costs a certain amount per minute, depending on the time of day when the call is made. When a customer starts connecting a long-distance call, the time will be recorded, and so will be the time when the customer hangs up the phone. Every calendar month, a bill is sent to the customer for each minute called (at a rate determined by the time of day). Your job is to prepare the bills for each month, given a set of phone call records.
         
           <a class="article-more-a" href="/2017/12/01/1016-Phone-Bills/#more">more >></a>
         
@@ -226,7 +230,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p>1015 Reversible Primes (20)<br>A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because its reverse 37 is also a prime.<br>Now given any two positive integers N (&lt; 10^5) and D (1 &lt; D &lt;= 10), you are supposed to tell if N is a reversible prime with radix D.
+        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><center><strong>1015. Reversible Primes (20)</strong></center>A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because its reverse 37 is also a prime.<br>Now given any two positive integers N (&lt; 10^5) and D (1 &lt; D &lt;= 10), you are supposed to tell if N is a reversible prime with radix D.
         
           <a class="article-more-a" href="/2017/12/01/1015-Reversible-Primes/#more">more >></a>
         
@@ -302,8 +306,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <audio width="10" height="10" controls><br><source src="/music/s.mp3"><br></audio>
-
+        <p><audio width="10" height="10" controls></audio></p>
+<p><source src="/music/s.mp3"><br></p>
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在初中二年级的时候，我酷爱写作，身边有一位好友也喜欢写写东西。有一次我们两在聊天，谈到写作的事情，我向他提议说，我觉得咱两写的不能算文章，为什么这样说呢，你看我们读鲁迅，那才叫文章，如果我们写的也叫文章，那岂不是辱没了迅哥，所以我们以后如果说我们写文章，就说写字，比如，我问他，你最近写有字吗？
         
           <a class="article-more-a" href="/2017/11/25/helloworld/#more">more >></a>
@@ -406,13 +410,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -489,6 +501,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">本来以为&lt;br&gt;如果再活一次的话&lt;br&gt;也许会有什么不一样&lt;br&gt;&lt;br&gt;结果&lt;br&gt;还是差不多&lt;br&gt;没有什么不同&lt;br&gt;只是突然觉得&lt;br&gt;再活一次的话&lt;br&gt;好像，真的没有必要</div>
+  	  	
+    	</section>
     
   </div>
   
