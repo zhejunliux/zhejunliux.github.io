@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://turingxi.top">
   <title>1002.A + B for Polynomials | NJ&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A+B where A and B are tow polynomials.Input Specification:Each input file contains one test">
+  <meta name="description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A + B where A and B are tow polynomials.Input Specification:Each input file contains one te">
 <meta name="keywords" content="PAT,C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1002.A + B for Polynomials">
 <meta property="og:url" content="http://turingxi.top/2017/08/12/Polynomials/index.html">
 <meta property="og:site_name" content="NJ&#39;s blog">
-<meta property="og:description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A+B where A and B are tow polynomials.Input Specification:Each input file contains one test case. Each case occupies lines, and eac">
-<meta property="og:updated_time" content="2017-12-18T03:27:42.000Z">
+<meta property="og:description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A + B where A and B are tow polynomials.Input Specification:Each input file contains one test case. Each case occupies lines, and e">
+<meta property="og:updated_time" content="2017-12-18T05:52:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1002.A + B for Polynomials">
-<meta name="twitter:description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A+B where A and B are tow polynomials.Input Specification:Each input file contains one test case. Each case occupies lines, and eac">
+<meta name="twitter:description" content="英文描述A + B for Polynomials(25)    This time, you are supposed to find A + B where A and B are tow polynomials.Input Specification:Each input file contains one test case. Each case occupies lines, and e">
   
   
     <link rel="icon" href="/img/tu.png">
@@ -154,7 +154,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><strong>A + B for Polynomials(25)</strong><font size="3"><br>    This time, you are supposed to find A+B where A and B are tow polynomials.<br><strong>Input Specification:</strong><br>Each input file contains one test case. Each case occupies lines, and each line contains the information of a polynomial: K N1 aN1 N2 aN2……NK aNK, where K is number of nonzero terms in the polynomial, Ni and aNi(i=1, 2, …, K) are the exponents and coefficients, respectively. It is given that 1 &lt;= K &lt;= 10, 0 &lt;= NK &lt;… N2 &lt; N1 &lt;=1000.<a id="more"></a><br><strong>Output Specification:</strong><br>For each test case you should output the sum of A and B in one line, with the same format as the input. Notice must be NO extra space at the end of each line.Please be accurate to 1 decimal palce.<br><strong>Sample Input:</strong><br>2 1 2.4 0 3.2<br>2 2 1.5 1 0.5<br><strong>Sample Output:</strong><br>3 2 1.5 1 2.9 0 3.2</font></p>
+        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><strong>A + B for Polynomials(25)</strong><font size="3"><br>    This time, you are supposed to find A + B where A and B are tow polynomials.<br><strong>Input Specification:</strong><br>Each input file contains one test case. Each case occupies lines, and each line contains the information of a polynomial: K N1 aN1 N2 aN2……NK aNK, where K is number of nonzero terms in the polynomial, Ni and aNi(i=1, 2, …, K) are the exponents and coefficients, respectively. It is given that 1 &lt;= K &lt;= 10, 0 &lt;= NK &lt;… N2 &lt; N1 &lt;=1000.<a id="more"></a><br><strong>Output Specification:</strong><br>For each test case you should output the sum of A and B in one line, with the same format as the input. Notice must be NO extra space at the end of each line.Please be accurate to 1 decimal palce.<br><strong>Sample Input:</strong><br>2 1 2.4 0 3.2<br>2 2 1.5 1 0.5<br><strong>Sample Output:</strong><br>3 2 1.5 1 2.9 0 3.2</font></p>
 <h3 id="中文描述"><a href="#中文描述" class="headerlink" title="中文描述"></a>中文描述</h3><p><strong>多项式A + B</strong></p>
 <p><font size="3">已知多项式A和B，求A+B<br><strong>输入规格：</strong><br>每一个输入文件包含一个测试用例。每一个用例占据了一些行，每一行包含了一个多项式的信息：K N1 aN1 N2 aN2…NK aNK，在多项式里K是一个非零项，Ni和aNi(i=1, 2, … ,K)是指数和系数。设1 &lt;= K &lt;= 10，0 &lt;= NK &lt; … &lt; N2 &lt; N1 &lt;=1000。<br><strong>输出规格：</strong><br>对于每一个测试用例在一行内输出，输出格式同输入格式相同。输出的最后一个字符不能是空格。小数点精确都后1位。<br><strong>样例输入:</strong><br>73 10<br>23 2<br>23 10<br>-2<br><strong>样例输出:</strong><br>Yes<br>Yes<br>No</font></p>
 <h3 id="分析与解题"><a href="#分析与解题" class="headerlink" title="分析与解题"></a>分析与解题</h3><p>根据样例输入和输出初步得到，输入第一行为多项式A，输入第二行为多项式B，输出结果是合并同类项相关操作：指数相同系数相加减。隐含条件，如果系数为0则不用输出此项。例如：A = 3^2 + 0 ^3；B = 4^2，则结果A+B = 7^2。输入。根据条件Ni and aNi(i=1, 2, …, K)，用一个整形数字来接受输入数据K。定义结构体数组，来接受输入数据Ni和aNi。计算。结构体数组A代替多项式A，结构体数组B代替多项式B。求A + B，如果A中指数同B中指数相同，则将A + B的系数存放在B中，否则，将A中指数和系数插入到B中。遍历数组A，查找A中每一个指数是否在B中出现，如果出现就更新B数组中系数的值，否则就将A数组中指数和系数插入到B数组。因此，定义三个辅助函数。Search（）：查找结构体数组A是否包含指数x；Update（）：根据指定下标更新系数值；Insert（）：将指定指数和系数插入到结构体数组中。考虑隐含条件，将B中系数不等于0的提取出，存放在C中。输出。将结构体数组C输出。</p>
@@ -349,7 +349,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">剑指offer</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">读书</a>
               </li>
             
             <div class="clearfix"></div>
