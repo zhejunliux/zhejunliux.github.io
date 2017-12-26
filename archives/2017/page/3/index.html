@@ -6,19 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://turingxi.top">
-  <title>1014.Waiting in Line | NJ&#39;s blog</title>
+  <title>Archives: 2017 | NJ&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="英文描述Waiting in Line (30)    Suppose a bank has N windows open for service. There is a yellow line in front of the windows which divides the waiting area into tw">
-<meta name="keywords" content="PAT,C">
-<meta property="og:type" content="article">
-<meta property="og:title" content="1014.Waiting in Line">
-<meta property="og:url" content="http://turingxi.top/2017/11/10/WitingLine/index.html">
+  <meta name="description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NJ&#39;s blog">
+<meta property="og:url" content="http://turingxi.top/archives/2017/page/3/index.html">
 <meta property="og:site_name" content="NJ&#39;s blog">
-<meta property="og:description" content="英文描述Waiting in Line (30)    Suppose a bank has N windows open for service. There is a yellow line in front of the windows which divides the waiting area into two parts. The rules for the customers to">
-<meta property="og:updated_time" content="2017-12-18T05:48:43.000Z">
+<meta property="og:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1014.Waiting in Line">
-<meta name="twitter:description" content="英文描述Waiting in Line (30)    Suppose a bank has N windows open for service. There is a yellow line in front of the windows which divides the waiting area into two parts. The rules for the customers to">
+<meta name="twitter:title" content="NJ&#39;s blog">
+<meta name="twitter:description" content="nj, it, c, c++, java, python, css, js, html, algorithm, jsp, php, asp">
   
   
     <link rel="icon" href="/img/tu.png">
@@ -134,39 +132,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-WitingLine" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      1014.Waiting in Line
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/07/12/Format/" class="archive-article-date">
+  	<time datetime="2017-07-12T02:31:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-12</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/07/12/Format/">1001.A + B Format</a>
     </h1>
   
 
-        
-        <a href="/2017/11/10/WitingLine/" class="archive-article-date">
-  	<time datetime="2017-11-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="英文描述"><a href="#英文描述" class="headerlink" title="英文描述"></a>英文描述</h3><p><strong>Waiting in Line (30)</strong><font size="3"><br>    Suppose a bank has N windows open for service. There is a yellow line in front of the windows which divides the waiting area into two parts. The rules for the customers to wait in line are:<br>1    The space inside the yellow line in front of each window is enough to contain a line with M customers. Hence when all the N lines are full, all the customers after (and including) the (NM+1)st one will have to wait in a line behind the yellow line.<br>2    Each customer will choose the shortest line to wait in when crossing the yellow line. If there are two or more lines with the same length, the customer will always choose the window with the smallest number.<a id="more"></a><br>3    Customer[i] will take T[i] minutes to have his/her transaction processed.<br>4    The first N customers are assumed to be served at 8:00am.<br>Now given the processing time of each customer, you are supposed to tell the exact time at which a customer has his/her business done.<br>For example, suppose that a bank has 2 windows and each window may have 2 custmers waiting inside the yellow line. There are 5 customers waiting with transactions taking 1, 2, 6, 4 and 3 minutes, respectively. At 08:00 in the morning, customer1 is served at window1 while customer2 is served at window2. Customer3 will wait in front of window1 and customer4 will wait in front of window2. Customer5 will wait behind the yellow line.<br>At 08:01, customer1 is done and customer5 enters the line in front of window1 since that line seems shorter now. Customer2 will leave at 08:02, customer4 at 08:06, customer3 at 08:07, and finally customer5 at 08:10.<br><strong>Input Specification:</strong><br>Each input file contains one test case. Each case starts with a line containing 4 positive integers: N (&lt;=20, number of windows), M (&lt;=10, the maximum capacity of each line inside the yellow line), K (&lt;=1000, number of customers), and Q (&lt;=1000, number of customer queries).<br>The next line contains K positive integers, which are the processing time of the K customers.<br>The last line contains Q positive integers, which represent the customers who are asking about the time they can have their transactions done. The customers are numbered from 1 to K.<br><strong>Output Specification:</strong><br>For each of the Q customers, print in one line the time at which his/her transaction is finished, in the format HH:MM where HH is in [08, 17] and MM is in [00, 59]. Note that since the bank is closed everyday after 17:00, for those customers who cannot be served before 17:00, you must output “Sorry” instead.<br><strong>Sample Input:</strong><br>2 2 7 5<br>1 2 6 4 3 534 2<br>3 4 5 6 7<br><strong>Sample Output:</strong><br>08:07<br>08:06<br>08:10<br>17:00<br>Sorry</font></p>
-<h3 id="中文描述"><a href="#中文描述" class="headerlink" title="中文描述"></a>中文描述</h3><p><strong>通道等待</strong><font size="3"><br>    假设一个银行有N个服务窗口。窗口前的一条黄通道将等待区域分成两个部分。顾客的等待规则如下：<br>1    在每个窗口前黄色通道里面的空间足够容纳这个通道上的M个顾客。因此当N条通道占满了人的时候，NM + 1的那个顾客将会站在黄线后的区域等待。<br>2    当每个顾客在黄色通道后等待时，他们将会去选择最短的通道进入。如果有2条或多条通道具有相同的长度是，总是选择窗口号最小的通道。<br>3    顾客i需要t（i）分钟去办理他的业务。<br>4    银行早上8点开始上班。<br>5    现在给出每位顾客需要办理业务的时间，你要求出每位顾客办完他的业务时的时间。<br>举一个例子，假设这个银行有2个窗口，每个窗口可以容纳2个顾客在黄线里面等待着。这里有5个顾客办理业务的时间是1，2，6，4和3分钟。在早上8点，顾客1在窗口1办理业务，顾客2在窗口2办理业务，顾客3在窗口1前等待，顾客4在窗口2等待。顾客5在黄线外等。<br>在08：01分，顾客1办理完业务，并且顾客5就去窗口1千等待了，窗口1那个通道里的人最少。顾客2在08：02办理完业务，顾客4在08：06办理完业务，顾客3在08：07办理完业务，顾客5在08：10办理完业务。<br><strong>输入规格：</strong><br>每个文件包含一个测试用例。每个用例的第一行包含4个正整数：N（&lt;= 20，窗口数），M（&lt;= 10，窗口容量数），K（&lt;= 1000，顾客数量），Q（&lt;= 1000,需要查询这些顾客几点办理完业务）<br>下一行包含K个正整数，每个整数代表每个顾客需要办理业务的时间。<br>最后一行包含Q个正整数，是我们要求得这些顾客啥时候办理完业务。每个顾客被标记为1到N。<br><strong>输出规格：</strong><br>对于要查询的Q个用户，在一行内打印他们办理完业务时候的时间，格式是：小时：分钟，小时从08到17，分钟从00到59。注意，银行为客户提供服务的时间在17:00点之前，如果17:00之后还有客户需要我们服务，我们只能对他说“Sorry”<br><strong>样例输入:</strong><br>2 2 7 5<br>1 2 6 4 3 534 2<br>3 4 5 6 7<br><strong>样例输出:</strong><br>08:07<br>08:06<br>08:10<br>17:00</font></p>
-<h3 id="分析与解题"><a href="#分析与解题" class="headerlink" title="分析与解题"></a>分析与解题</h3><p>总算把这题读明白了，花了快20分钟。题意是否忽略了排队时间。假如早8点大家全都到了，有20个窗口，每个窗口容纳10人，那么前200个人是不是1秒就排好队了，其他800人在黄线外等着，等着去选择队伍最短的。还是只有10个人去排队，剩下的990个人在哪等着，去动态的选择队伍最短的。按道理讲显示中应该是我理解的那样，但从给的那个例子以及题目中要求好像不是这样的，也就是队伍有空你就进去。只有在黄线外的那些顾客采取动态选择队伍最短的进去。<br>    此刻代码已经写了出来，过了2个点，得了16分，画了快两天的时间。昨天看了别人的代码和思路，大致跟我的是一样的。所以我想在大体思路上是没有什么问题了，剩下的应该就是细节的处理问题了。我在这里通过文字把思路整体撸一遍，通过10个队列来模拟排队方式，初始化的时候，将NM个人，放入队列中，第一个人在1队列1号位置，第二个人在2队列1号位置，依次类推。这一点我是使用了队号和位置号来确定是第几个人的，假如是i队列和m位置号，那也就是第（i – 1）* n + j个人所在位置。我看了其他人的代码有通过直接去余的方法来写，觉得是蛮简单的。第i个人就在第i % N的位置上，次数他并没有去考虑第几个队列和第几个位置，因为i是一直在增加的，所以这样去初始化队列是蛮方便的。初始化时要考虑一件事情，k（所有顾客）是否小于nm，所以在初始化的时候要进行判断，我使用的方法是在入队处去统计人数，当k是小于nm时候，如果统计的人数<k时，我就结束了入队，因为我初始化队列时，如果k>= nm时候就会自动结束的。我刚才去测试了边界情况，假使所有的值都是大于或者等于1的。之后就开始判断哪个队列的队头顾客先把业务办理完毕，当队头顾客业务办理完毕后，将此顾客对应的是第几号以及他所花费的时间累加其起来，算是他的结束时间。这一点在实现的时候颇麻烦的，啰里啰嗦的，可能是我没有设计好。我在这里把我的思路叙述一遍，我的队列里标记了顾客是第几个顾客以及他办理业务所花费的时间，字段名称是c和time，当时也没有想到较好的英文，c就是count的意思，计数的意思。这个队列设计的也是颇啰嗦，感觉就是没有设计感，是想到哪就搞到哪，我一直在纠结，出队与入队的操作，以及返回值的问题，我是在想返回结果体也就是element还是time字段，如果是element的话那么和它的出队参数将不一致，后来也没有想这个问题，就放到那了。当初始化完成后，我就开始找队头用时最少的顾客，我找的一定是一个对号最小且用时最少的顾客，之后我就返回这个顾客所在的队列以及这个顾客是第几个顾客，我是第几个顾客，我存储在了c中。整体循环我使用的是for i = 1 to k，也就是对这k个用户要进行一次出队和入队操作，之后分别统计他们的结束时间。之后有一点要谈的是，也就是银行的服务时间，银行在8：00到17：00之间接受服务请求，也就是当你17：00到的时候，哪怕你的服务时间是10个小时那，银行也会对你进行服务，但是当超过了17：00点，你就不能去申请服务了，对于这样的顾客，我们应该对他说sorry，明天再来吧。我在处理这一点的时候，是为每个队列添加了一个计时器，计时器的初值为0。现在又详细考虑了这件事情，感觉不行了，漏洞是在太多了。在思路上有一个大的点没有考虑到，需要改进一下思路。<br>    昨天又去把代码改进了一番，整体的思路是所有顾客都要入队，当然所有顾客也都要出队，后来又思索了很多，最后剩下一个点没过，报的错误是段错误，昨天晚上也没有很好的想明白这个事情。今天早上起来，我觉得去读一读ZJU的代码，看看两者的思路中的差异到底在哪。因为ZJU的代码是cpp写的，所以会记录一番关于cpp的相关知识。刚才去看了ZJU的代码，思路清晰，代码也简洁，整体的思路跟我的是一样的，只不过我的实现看起来复杂太多了。<br>    我决定还是放弃了，按照ZJU的思路去写一遍吧。说不定能发现自己的错误到底在哪。调试到要抓狂的阶段了，真的是找不出来是哪里错了。按照ZJU的方法写了一遍，又是一堆的错误。pass吧，这道题。</k时，我就结束了入队，因为我初始化队列时，如果k></p>
-<h3 id="C语言实现"><a href="#C语言实现" class="headerlink" title="C语言实现"></a>C语言实现</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="keyword">int</span> time; </span><br><span class="line">	<span class="keyword">int</span> c;</span><br><span class="line">&#125;elem;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	elem qlen[<span class="number">30</span>];</span><br><span class="line">	<span class="keyword">int</span> rear;</span><br><span class="line">	<span class="keyword">int</span> front;</span><br><span class="line">	<span class="keyword">int</span> length;</span><br><span class="line">&#125;<span class="built_in">queue</span>;</span><br><span class="line"><span class="built_in">queue</span> win[<span class="number">30</span>];</span><br><span class="line"><span class="keyword">int</span> info[<span class="number">2001</span>];</span><br><span class="line"><span class="keyword">int</span> query[<span class="number">2001</span>];</span><br><span class="line"><span class="keyword">int</span> end[<span class="number">2001</span>];</span><br><span class="line"><span class="keyword">int</span> accumulate[<span class="number">30</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> n, m, k, q;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">initqueue</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;=  n)</span><br><span class="line">	&#123;</span><br><span class="line">		accumulate[i] = <span class="number">0</span>;</span><br><span class="line">		win[i].front = win[i].rear = <span class="number">0</span>;</span><br><span class="line">		win[i].length = <span class="number">0</span>;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">enqueue</span><span class="params">(<span class="keyword">int</span> i, elem node)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(win[i].length &lt; m)</span><br><span class="line">	&#123;</span><br><span class="line">		win[i].qlen[win[i].rear] = node;</span><br><span class="line">		win[i].rear = (win[i].rear + <span class="number">1</span>) % m;</span><br><span class="line">		win[i].length++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">elem <span class="title">show</span><span class="params">(<span class="keyword">int</span> i)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> win[i].qlen[win[i].front];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dequeue</span><span class="params">(<span class="keyword">int</span> i)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(win[i].length &gt; <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		win[i].front = (win[i].front + <span class="number">1</span>) % m;</span><br><span class="line">		win[i].length--;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">input</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;n, &amp;m, &amp;k, &amp;q);	</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;= k)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;info[i]);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;= q)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;query[i]);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">elem <span class="title">min</span><span class="params">(<span class="keyword">int</span> *num)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	elem m;</span><br><span class="line">	m.time = <span class="number">9999999</span>;</span><br><span class="line">	m.c = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;=  n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//统计队列不为空的最小值</span></span><br><span class="line">		<span class="keyword">if</span>(win[i].length &gt; <span class="number">0</span>)</span><br><span class="line">		&#123;	</span><br><span class="line">			<span class="keyword">if</span>(m.time &gt; show(i).time)</span><br><span class="line">			&#123;</span><br><span class="line">				m = show(i);</span><br><span class="line">				*num = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> m;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">calc</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> en = <span class="number">0</span>, de = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">int</span> count = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;= m)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> j = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(j &lt;= n)</span><br><span class="line">		&#123;</span><br><span class="line">			elem tmp;</span><br><span class="line">			tmp.c = (i - <span class="number">1</span>) * n + j;</span><br><span class="line">			tmp.time = info[(i - <span class="number">1</span>) * n + j];</span><br><span class="line">			<span class="keyword">if</span>(count &lt;= k)</span><br><span class="line">			&#123;</span><br><span class="line">				en++;</span><br><span class="line">				enqueue(j, tmp);	</span><br><span class="line">				count++;</span><br><span class="line">			&#125;</span><br><span class="line">			j++;</span><br><span class="line">		&#125;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> num; <span class="comment">//窗口号</span></span><br><span class="line">	elem tmp = min(&amp;num); </span><br><span class="line">	<span class="keyword">while</span>(tmp.c != <span class="number">-1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		tmp = min(&amp;num); </span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(accumulate[num] &gt;= <span class="number">540</span>)</span><br><span class="line">			end[tmp.c] = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			end[tmp.c] = tmp.time + accumulate[num];</span><br><span class="line">			accumulate[num] = end[tmp.c];</span><br><span class="line">		&#125;</span><br><span class="line">		dequeue(num);</span><br><span class="line">		de++;</span><br><span class="line">		<span class="keyword">if</span>(count &lt;= k)</span><br><span class="line">		&#123;</span><br><span class="line">			elem enq;</span><br><span class="line">			enq.time = info[count];</span><br><span class="line">			enq.c = count;</span><br><span class="line">			en++;</span><br><span class="line">			enqueue(num, enq);</span><br><span class="line">			count++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">formate</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;= q)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(end[query[i]] != <span class="number">-1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> hour,minutes;</span><br><span class="line">			hour = <span class="number">8</span> + end[query[i]] / <span class="number">60</span>;</span><br><span class="line">			minutes = end[query[i]] % <span class="number">60</span>; </span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%02d:%02d\n"</span>, hour, minutes);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">puts</span>(<span class="string">"Sorry"</span>);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	input();</span><br><span class="line">	initqueue();</span><br><span class="line">	calc();</span><br><span class="line">	formate();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="测试链接"><a href="#测试链接" class="headerlink" title="测试链接"></a>测试链接</h3><p><a href="https://www.patest.cn/contests/pat-a-practise/1014" title="1014" target="_blank" rel="noopener">click me</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -182,79 +177,60 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
-  
-    <a href="/2017/12/01/1015-Reversible-Primes/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          1015.Reversible Primes
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/11/06/BattleOverRank/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">1013.Battle Over Cities</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/01/25/helloworld/" class="archive-article-date">
+  	<time datetime="2017-01-25T02:47:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-25</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/01/25/helloworld/">HelloWorld</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
   
 
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://turingxi.top/2017/11/10/WitingLine/",
-  owner: 'NJ2046',
-  repo: 'NJ2046.github.io',
-  oauth: {
-    client_id: '262c85e9adc4507cbb7a',
-    client_secret: 'a4ef2026a57033d7f43fcbe701e1887ee37200f5',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2017/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/2017/">1</a><a class="page-number" href="/archives/2017/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
 
 
@@ -278,8 +254,8 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
