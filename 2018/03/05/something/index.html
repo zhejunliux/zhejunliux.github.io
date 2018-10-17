@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://turingxi.top">
-  <title>两个栈来实现一个队列 | NJ&#39;s blog</title>
+  <title>something | NJ&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题描述用两个栈来实现一个队列分析这个题目其实是在考你对栈和队列的性质是否掌握的是否清晰明白。刚开始我大致想了几分钟没有想出来，后来去看了剑指offer上的指导，发现跟我想的是蛮接近。现在我再来捋一下思路，首先是实现队列，队列的性质是先进先出，而此时实现的条件是通过两个栈来实现。我们可以先考虑把元素存起来，也就是入队操">
-<meta name="keywords" content="Python,剑指offer">
+  <meta name="description" content="###今天就码字吧今天就码字了也不整那些虚的了，其实其实现在蛮想去睡觉的。一肚子话，关于我，关于世界。哈哈哈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="两个栈来实现一个队列">
-<meta property="og:url" content="http://turingxi.top/2017/12/25/v9/index.html">
+<meta property="og:title" content="something">
+<meta property="og:url" content="http://turingxi.top/2018/03/05/something/index.html">
 <meta property="og:site_name" content="NJ&#39;s blog">
-<meta property="og:description" content="问题描述用两个栈来实现一个队列分析这个题目其实是在考你对栈和队列的性质是否掌握的是否清晰明白。刚开始我大致想了几分钟没有想出来，后来去看了剑指offer上的指导，发现跟我想的是蛮接近。现在我再来捋一下思路，首先是实现队列，队列的性质是先进先出，而此时实现的条件是通过两个栈来实现。我们可以先考虑把元素存起来，也就是入队操作，因为你这个函数不可能什么也不做，最基础的一部肯定是要先存储起来。所以第一步操">
-<meta property="og:updated_time" content="2017-12-25T12:44:04.000Z">
+<meta property="og:description" content="###今天就码字吧今天就码字了也不整那些虚的了，其实其实现在蛮想去睡觉的。一肚子话，关于我，关于世界。哈哈哈">
+<meta property="og:updated_time" content="2018-03-04T17:30:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="两个栈来实现一个队列">
-<meta name="twitter:description" content="问题描述用两个栈来实现一个队列分析这个题目其实是在考你对栈和队列的性质是否掌握的是否清晰明白。刚开始我大致想了几分钟没有想出来，后来去看了剑指offer上的指导，发现跟我想的是蛮接近。现在我再来捋一下思路，首先是实现队列，队列的性质是先进先出，而此时实现的条件是通过两个栈来实现。我们可以先考虑把元素存起来，也就是入队操作，因为你这个函数不可能什么也不做，最基础的一部肯定是要先存储起来。所以第一步操">
+<meta name="twitter:title" content="something">
+<meta name="twitter:description" content="###今天就码字吧今天就码字了也不整那些虚的了，其实其实现在蛮想去睡觉的。一肚子话，关于我，关于世界。哈哈哈">
   
   
     <link rel="icon" href="/img/tu.png">
@@ -134,27 +133,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-v9" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-something" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      两个栈来实现一个队列
+      something
     </h1>
   
 
         
-        <a href="/2017/12/25/v9/" class="archive-article-date">
-  	<time datetime="2017-12-25T12:02:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-25</time>
+        <a href="/2018/03/05/something/" class="archive-article-date">
+  	<time datetime="2018-03-04T17:13:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>问题描述</strong><br>用两个栈来实现一个队列<br><strong>分析</strong><br>这个题目其实是在考你对栈和队列的性质是否掌握的是否清晰明白。刚开始我大致想了几分钟没有想出来，后来去看了剑指offer上的指导，发现跟我想的是蛮接近。现在我再来捋一下思路，首先是实现队列，队列的性质是先进先出，而此时实现的条件是通过两个栈来实现。我们可以先考虑把元素存起来，也就是入队操作，因为你这个函数不可能什么也不做，最基础的一部肯定是要先存储起来。所以第一步操作就是将入队的元素存储在s1中，s1需要入栈来存储这些元素。如果此时需要出队呢？我们一定是要把s1中栈底的元素出队，而此时他却在栈底，通过将s1的出栈的元素在入进s2，那么s1的栈底元素也就变成了s2的栈顶元素，如果此时出队就是s2的出栈操作。这里有个限制操作就是，<a id="more"></a>只要是入队就是s1的入栈操作，只有是出队就是s2的出栈操作。何时需要将s1的元素出栈到s2呢，也就是s2为空栈的时候，并且这个操作是伴随着出队操作时才会去判断的。也就是在入队中，只需对s1进行入栈操作即可。出队时，需要判断s2是否为空，如果为空，就将s1的内容出栈到s2。接着下来考虑一下入队和出队的溢出操作，入队的溢出是队满，队满的判断是s1满，s2不空。出队的操作是队不空，队列空的判断是s2空，s1也空。ps：感觉这次的分析应该是糟糕透了，说了太多废话。<br><strong>Python实现</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">S</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.m = <span class="number">65536</span></span><br><span class="line">		self.top = <span class="number">-1</span></span><br><span class="line">		self.l = []</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">isempty</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(self.top == <span class="number">-1</span>):</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">isfull</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(self.top == self.m):</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">		</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self, key)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">not</span> self.isfull()):</span><br><span class="line">			self.l.append(key)</span><br><span class="line">			self.top += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">not</span> self.isempty()):</span><br><span class="line">			tmp = self.top</span><br><span class="line">			self.top -= <span class="number">1</span></span><br><span class="line">			<span class="keyword">return</span> self.l[tmp]</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Q</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.s1 = S()</span><br><span class="line">		self.s2 = S()</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">isempty</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(self.s1.isempty() <span class="keyword">and</span> self.s2.isempty()):</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">isfull</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(self.s1.isfull() <span class="keyword">and</span> (<span class="keyword">not</span> self.s2.isempty())):</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">enqueue</span><span class="params">(self, key)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">not</span> self.isfull()):</span><br><span class="line">			self.s1.push(key)</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">dequeue</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">not</span> self.isempty()):</span><br><span class="line">			<span class="keyword">if</span>(self.s2.isempty()):</span><br><span class="line">				<span class="keyword">while</span>(<span class="keyword">not</span> self.s1.isempty()):</span><br><span class="line">					self.s2.push(self.s1.pop())</span><br><span class="line">			<span class="keyword">return</span> self.s2.pop()</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></span><br><span class="line">	q = Q()	</span><br><span class="line">	q.enqueue(<span class="number">1</span>)</span><br><span class="line">	q.enqueue(<span class="number">2</span>)</span><br><span class="line">	q.enqueue(<span class="number">3</span>)</span><br><span class="line">	q.enqueue(<span class="number">4</span>)</span><br><span class="line">	a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">	f = <span class="number">1</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">		<span class="keyword">if</span>(i != q.dequeue()):</span><br><span class="line">			f = <span class="number">0</span></span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">if</span>(f == <span class="number">1</span>):</span><br><span class="line">		print(<span class="string">"passed"</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"failed"</span>)</span><br><span class="line">test()</span><br></pre></td></tr></table></figure></p>
+        <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5133273&aut1=1&height=66"></iframe></p>
+<p>###今天就码字吧<br>今天就码字了也不整那些虚的了，其实其实现在蛮想去睡觉的。<br>一肚子话，关于我，关于世界。<br>哈哈哈</p>
 
       
 
@@ -163,21 +163,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">剑指offer</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -191,18 +176,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/27/v7/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          重建二叉树
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/22/datastruct/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数据结构和算法</div>
+    <a href="/2018/01/05/view1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据岗位的面试经历</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -241,7 +217,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://turingxi.top/2017/12/25/v9/",
+  id: "http://turingxi.top/2018/03/05/something/",
   owner: 'NJ2046',
   repo: 'NJ2046.github.io',
   oauth: {
